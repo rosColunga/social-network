@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Tipo de archivo e dioma del sitio web-->
+<html lang="en">
+
+<head>
+  <!--Codificación de carácteres especiales-->
+  <meta charset="utf-8">
+  <!-- Define área usada por browser-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título web page-->
+  <title>
+    <Co-Lab>
+  </title>
+  <!-- FALTA!! Icono página-->
+  <link rel="shortcut icon" href="">
+  <!-- Tipografías-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Se vinculan estilos-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Formulario de ingreso-->
+  <div class="container">
+
+    <nav class="row">
+      <div class="row centered col-xs-pull-4">
+        <div class="col-xs-1 text-center">
+          <a class="glyphicon glyphicon-menu-left arrow-style go-back" type="button"></a>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center form-title" >Log In</h1>
+          <h4 class="text-center subtitle">  Ingresa tus datos para comenzar</h4>
+        </div>
+      </div>
+      <hr>
+    </nav>
+
+    <div class="row">
+      <br>
+      <div class="centered">
+
+        <form role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+              <input type="text" class="form-control" id="username" placeholder="First Name   Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group form-inline">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+              <input type="text" class="wow form-control" id="username" placeholder="tucorreo@gmail.com">
+            </div>
+          </div>
+          <div class="checkbox">
+            <label class="small-letter"><input type="checkbox" value="" checked>Estoy de acuerdo con los <a href="#"> terminos de privacidad</a> </label>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row margin-0">
+    <div class="col-xs-12  col-sm-6 col-sm-4 col-sm-offset-4">
+      <button class="btn btn-lg btn-block text-uppercase enabled nextJs" type="button">Entrar</button>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Se vincula jQuery-CDN / Data / JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/log-in.js"></script>
+
+</body>
+
+</html>

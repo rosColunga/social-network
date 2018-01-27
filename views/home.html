@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--Tipo de archivo e dioma del sitio web-->
+<html lang="en">
+
+<head>
+  <!--Codificación de carácteres especiales-->
+  <meta charset="utf-8">
+  <!-- Define área usada por browser-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título web page-->
+  <title> <Co-Lab> </title>
+  <!-- FALTA!! Icono página-->
+  <link rel="shortcut icon" href="">
+  <!-- Tipografías-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Se vinculan estilos-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Barra de navegación-->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Menú hamburguesa para celulares-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Logo en proceso -->
+          <a class="logo white">
+            <h4> < Co-Lab > </h4>
+          </a>
+        </div>
+
+        <!-- Funciones en barra de navegación-->
+        <div class="collapse navbar-collapse" id="collapse-1">
+
+          <ul class="nav navbar-nav navbar-right text-uppercase">
+            <li><a href="#">Mi perfil</a></li>
+            <li><a href="#">Amigos</a></li>
+            <li><a href="#">Log-out</a></li>
+          </ul>
+        </div>
+      </div>
+  </header>
+
+  <!-- Contenidos en Home-->
+  <div class="container-fluid profile-title">
+    <div class="row row-sm-height">
+
+      <!-- Info personal-->
+      <aside class="col-sm-4 profile-aside">
+        <img class="profile-aside-pic" src="../assets/images/friend1.jpg" alt="">
+        <h4 class="profile-title">Nickname</h4>
+        <a href="full-pofile.html">
+          <h4>5ta Generación</h4>
+        </a>
+        <div class="profile-info">
+          <h6 class="text-left">No sé qué más agregar aquí de información, tal véz el e-mail, redes o una biografía pequeña de la alumna...</h6>
+        </div>
+      </aside>
+
+      <!-- Sección de Posts-->
+      <section class="col-sm-6">
+        <article>
+          <h2>¿Qué me ayudó a maquetar mejor?</h2>
+          <img src="../assets/images/post1.jpg" />
+          <div class="row">
+            <p class="col-sm-10">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div class="col-sm-2 col-md-2">
+              <input type="button" class="btn btn-primary" value="More..." />
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h2>S.O.S ¡No encuentro mi error!</h2>
+          <img src="../assets/images/post2.jpg" />
+          <div class="row">
+            <p class="col-sm-10">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div class="col-sm-2">
+              <input type="button" class="btn btn-primary" value="More..." />
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h2>Reto Foodmap: Sintaxis de Json para manejo de Data</h2>
+          <img src="../assets/images/post3.jpg" />
+          <div class="row">
+            <p class="col-sm-10">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div class="col-sm-2">
+              <input type="button" class="btn btn-primary" value="More..." />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sección de fotos de amigos y buscador  *esto funciona en celular y Desktop, pero en tablet se hace raro* >.< -->
+      <aside class="friends-icon-list col-sm-2 friends-aside">
+        <h5 class="white page-header padd-marg-1 text-uppercase"> <span class="text-uppercase weight-400">Laboratorians </span>en tu red</h5>
+
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+          <span class="input-group-addon"> <span class="glyphicon glyphicon-search"></span> </span>
+        </div>
+
+
+        <a href="friend1.html">
+            <img src="../assets/images/friend2.jpg"/>
+            <h6>5ta Generación</h6>
+          </a>
+        <a href="friend2.html">
+            <img src="../assets/images/friend3.jpg"/>
+            <h6>5ta Generación</h6>
+          </a>
+        <a href="friend3.html">
+            <img src="../assets/images/friend4.jpg"/>
+            <h6>4ta Generación (teacher)</h6>
+          </a>
+        <a href="friend4.html">
+            <img src="../assets/images/friend5.jpg"/>
+            <h6>4ta Generación</h6>
+          </a>
+        <a href="friend5.html">
+            <img src="../assets/images/friend6.jpg"/>
+            <h6>1ra Generación</h6>
+          </a>
+
+
+      </aside>
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <h1>FOOTER</h1>
+  </footer>
+
+  <!-- Se vincula jQuery-CDN / Data / JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/home.js"></script>
+
+</body>
+
+</html>
