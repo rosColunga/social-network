@@ -1,0 +1,157 @@
+/**** Estilos Generales ****/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 7em;
+}
+
+/**** Vista Splash ****/
+
+body.splash {
+  height: 100vh;
+  background:gray;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  align-items: center;
+}
+
+.slow-title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 4em;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.splash-view {
+  margin-left: 8.5vw;
+  text-align: center;
+}
+
+.subtitle {
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  font-size: 2em;
+}
+
+/**** Home ****/
+
+aside> a {
+  display: inline-block;
+}
+
+article {
+  padding: 2.5em;
+}
+
+article img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 6px 6px 8px #777;
+  margin-bottom: 20px;
+}
+
+article p {
+  font-size: 1em;
+}
+
+aside {
+  background-color: #ededed;
+  text-align: center;
+  padding-top: 40px;
+  height: 100%;
+}
+
+aside.profile-aside {
+  height: 100%;
+}
+
+footer {
+  background-color: #0e0e0e;
+  color: #cecece;
+  padding: 20px;
+  text-align: center;
+}
+
+img.profile-aside-pic {
+  width: 60%;
+  height: 60%;
+  border-radius: 100%;
+}
+
+/* Elementos centrados vertical y horizontalmente */
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friends-icon-list {
+  background-color: #333;
+  padding-bottom: 3.5em;
+}
+
+.friends-icon-list a {
+  color: white;
+}
+
+.friends-icon-list a h6 {
+  margin-top: 2px;
+  margin-bottom: 14px;
+}
+
+.friends-icon-list img {
+  display: inline-block;
+  width: 4.5em;
+  height: 4.5em;
+  margin: 2em;
+  border-radius: 100%;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  padding: 30px 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #bbb;
+}
+
+.padd-marg-1 {
+  padding: 1%;
+  margin: 1%;
+}
+
+.profile-title {
+  color: #3a3a3a;
+}
+
+.weight-400 {
+  font-weight: 700;
+}
+
+.white {
+  color: #ffff;
+}
+
+/*** Vista "log in" ***/
+
+/* Nombre, e-mail */
+form {
+  width: 75vw;
+  max-width: 500px;
+}
+
+/* Términos*/
+.small-letter {
+  font-size: .9em;
+  padding: 3%;
+}
