@@ -3,6 +3,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   padding-top: 7em;
+  overflow-x: hidden;
 }
 
 /**** Vista Splash ****/
@@ -10,7 +11,6 @@ body {
 body.splash {
   height: 100vh;
   background:gray;
-  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,28 +40,6 @@ body.splash {
 }
 
 /**** Home ****/
-.new-post-container {
-  background-color: white;
-  box-shadow: 6px 6px 8px #777;
-  margin: 0 auto;
-}
-
-.post-body, .post-title {
-  width: 94%;
-  margin: 0 2vw 0 1vw;
-  font-size: 1.2em;
-}
-
-.post-title {
-  height: 5vh;
-  border:none;
-  background-color:white;
-}
-
-.post-body {
-  border:none;
-  background-color:white;
-}
 
 aside> a {
   display: inline-block;
@@ -114,24 +92,17 @@ img.profile-aside-pic {
   align-items: center;
 }
 
-.friends-icon-list {
+.friends-section {
   background-color: #333;
   padding-bottom: 3.5em;
 }
 
-.friends-icon-list a {
-  color: white;
-}
-
-.friends-icon-list a h6 {
+.friends-section a h6 {
   margin-top: 2px;
   margin-bottom: 14px;
 }
 
-.friends-icon-list img {
-  display: inline-block;
-  width: 4.5em;
-  height: 4.5em;
+.friends-section img {
   margin: 2em;
   border-radius: 100%;
 }
@@ -150,6 +121,18 @@ img.profile-aside-pic {
 .padd-marg-1 {
   padding: 1%;
   margin: 1%;
+}
+
+.photo-gallery {
+  margin: 3% 0 3% 10%;
+}
+
+.pic-style {
+  width: 75%;
+  height: 75%;
+  padding-left: 0;
+  min-height: 60px;
+  min-width: 60px;
 }
 
 .profile-title {
@@ -176,4 +159,168 @@ form {
 .small-letter {
   font-size: .9em;
   padding: 3%;
+}
+
+/*** SECCIÓN LABORATORIANS***/
+
+input.form-control {
+  border-color: #cecece;
+}
+
+img {
+  padding: 2%;
+}
+
+#margin-0 {
+  margin: 0;
+}
+
+.container-data-modal {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.figure-size {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.glyphicon-search {
+  color: #cecece;
+}
+
+.input-group-addon:last-child {
+  background-color: #0D1218;
+  border-color: #cecece;
+}
+
+.item-text-style {
+  font-size: 1em;
+  color: #939393;
+}
+
+
+.margin-top {
+  margin-top: 1.5em;
+}
+
+.modal-background {
+  background-image: url(../assets/images/agave.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.modal-name-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.modal-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.modal-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-item {
+  width: 50%;
+  height: 100px;
+}
+
+.modal-title-nojs {
+  color: #1f3559;
+  font-weight: 300;
+}
+
+.modal-origin-title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.modal-title-style {
+  color: #1f3559;
+  font-weight: 300;
+}
+
+/* mouseover*/
+.mouseOpacity {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-right:5%;
+  min-height: 60px;
+  min-width: 60px;
+  margin-left: 5%;
+  background: rgba(0, 8, 0, .8);
+  border-radius: 7%;
+}
+
+.msOver-text {
+  font-size: -8em;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+/**** Home > Postear ****/
+.new-post-container {
+  background-color: white;
+  box-shadow: 6px 6px 8px #777;
+  margin: 0 auto;
+}
+
+.post-body, .post-title {
+  width: 94%;
+  margin: 0 2vw 0 1vw;
+  font-size: 1.2em;
+}
+
+.post-title {
+  height: 5vh;
+  border:none;
+  background-color:white;
+}
+
+.post-body {
+  border:none;
+  background-color:white;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.relPosition {
+  position: relative;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+/* Fotos amigos en móvil*/
+@media (max-width:768px) {
+  .photo-gallery {
+    margin: 0;
+  }
+  .pic-style {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+  }
 }
