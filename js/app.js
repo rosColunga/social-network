@@ -8,5 +8,5 @@ $(document).ready(function() {
   // Tiempo para cambiar localización 3s
   setTimeout(function() {
     // Direccionamiento a view: "home"
-    window.location.href = 'log-in.html';}, 3000);
+    window.location.href = 'views/log-in.html';}, 3000);
 });

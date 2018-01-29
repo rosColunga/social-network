@@ -118,38 +118,61 @@
       </section>
 
       <!-- Sección de fotos de amigos y buscador  *esto funciona en celular y Desktop, pero en tablet se hace raro* >.< -->
-      <aside class="friends-icon-list col-sm-2 friends-aside">
-        <h5 class="white page-header padd-marg-1 text-uppercase"> <span class="text-uppercase weight-400">Laboratorians </span>en tu red</h5>
+<aside class="friends-section col-sm-2">
+  <h5 class="white page-header padd-marg-1 text-uppercase"> <span class="text-uppercase weight-400">Laboratorians </span>en tu red</h5>
 
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
-          <span class="input-group-addon"> <span class="glyphicon glyphicon-search"></span> </span>
+  <div class="container-fluid row">
+    <div class="form-group col-xs-12">
+      <div class="input-group">
+        <input type="text" class="form-control input-js" placeholder="Name">
+        <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-gallery">
+    <!-- Galería de imágenes -->
+  </div>
+
+  <!--MODAL DATA RESTAURANTES-->
+
+  <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="modal">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h1 class="modal-name-title modal-title-style text-uppercase"></h1>
         </div>
+        <div class="modal-body modal-flex modal-flex">
+          <div class="container-data-modal modal-flex-container ">
+            <div class="modal-item ">
+              <h4 id="item-title" class=" text-center modal-title-style">GENERACIÓN <i class="glyphicon glyphicon-education"></i> </h4>
+              <p class=" text-center item-text-style place-name-data"></p>
+            </div>
+            <div class="modal-item ">
+              <h4 id="item-title" class=" text-center modal-title-style">SEDE <i class="glyphicon glyphicon-map-marker"></i> </h4>
+              <p class=" text-center item-text-style adress-data"></p>
+            </div>
+            <div class="modal-item ">
+              <h4 id="item-title" class=" text-center modal-title-style">CONTACTO <i class="glyphicon glyphicon-envelope"></i> </h4>
+              <p class="text-center item-text-style mail-data"></p>
+            </div>
+            <div class="modal-item ">
+              <h4 id="item-title" class=" text-center modal-title-style">ESPECIALIDAD <i class="glyphicon glyphicon-console"></i> </h4>
+              <p class="text-center item-text-style major-data"></p>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info">Ver perfil</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
-        <a href="friend1.html">
-            <img src="../assets/images/friend2.jpg"/>
-            <h6>5ta Generación</h6>
-          </a>
-        <a href="friend2.html">
-            <img src="../assets/images/friend3.jpg"/>
-            <h6>5ta Generación</h6>
-          </a>
-        <a href="friend3.html">
-            <img src="../assets/images/friend4.jpg"/>
-            <h6>4ta Generación (teacher)</h6>
-          </a>
-        <a href="friend4.html">
-            <img src="../assets/images/friend5.jpg"/>
-            <h6>4ta Generación</h6>
-          </a>
-        <a href="friend5.html">
-            <img src="../assets/images/friend6.jpg"/>
-            <h6>1ra Generación</h6>
-          </a>
 
-
-      </aside>
+</aside>
     </div>
   </div>
   <footer class="container-fluid">
