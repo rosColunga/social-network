@@ -69,44 +69,52 @@
 
       <!-- Sección de Posts-->
       <section class="col-sm-6">
-        <article>
-          <h2>¿Qué me ayudó a maquetar mejor?</h2>
-          <img src="../assets/images/post1.jpg" />
-          <div class="row">
-            <p class="col-sm-10">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-            <div class="col-sm-2 col-md-2">
-              <input type="button" class="btn btn-primary" value="More..." />
-            </div>
-          </div>
+        <article class="new-post-container">
+          <input type="text" id="post-title" class="post-title" placeholder="Escribe tu pregunta...">
+          <hr class="divider">
+          <textarea name="" id="post-body"  class="post-body" cols="1" rows="5" placeholder="Escribe una descripción..."></textarea>
+          <button type="submit" class="btn btn-primary post-btn" id="post-btn">POST</button>
         </article>
+        <section id="container">
+          <article>
+            <h2>¿Qué me ayudó a maquetar mejor?</h2>
+            <img src="../assets/images/post1.jpg" />
+            <div class="row">
+              <p class="col-sm-10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+              <div class="col-sm-2 col-md-2">
+                <input type="button" class="btn btn-primary" value="More..." />
+              </div>
+            </div>
+          </article>
 
-        <article>
-          <h2>S.O.S ¡No encuentro mi error!</h2>
-          <img src="../assets/images/post2.jpg" />
-          <div class="row">
-            <p class="col-sm-10">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-            <div class="col-sm-2">
-              <input type="button" class="btn btn-primary" value="More..." />
+          <article>
+            <h2>S.O.S ¡No encuentro mi error!</h2>
+            <img src="../assets/images/post2.jpg" />
+            <div class="row">
+              <p class="col-sm-10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+              <div class="col-sm-2">
+                <input type="button" class="btn btn-primary" value="More..." />
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article>
-          <h2>Reto Foodmap: Sintaxis de Json para manejo de Data</h2>
-          <img src="../assets/images/post3.jpg" />
-          <div class="row">
-            <p class="col-sm-10">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-            <div class="col-sm-2">
-              <input type="button" class="btn btn-primary" value="More..." />
+          <article>
+            <h2>Reto Foodmap: Sintaxis de Json para manejo de Data</h2>
+            <img src="../assets/images/post3.jpg" />
+            <div class="row">
+              <p class="col-sm-10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+              <div class="col-sm-2">
+                <input type="button" class="btn btn-primary" value="More..." />
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </section>
       </section>
 
       <!-- Sección de fotos de amigos y buscador  *esto funciona en celular y Desktop, pero en tablet se hace raro* >.< -->
@@ -153,7 +161,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="../js/data.js"></script>
   <script src="../js/home.js"></script>
-
 </body>
 
 </html>
