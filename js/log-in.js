@@ -10,7 +10,7 @@ $(document).ready(function() {
   var goBack = $('.go-back');
   goBack.on('click', function() {
     /*Direcciona a vista previa "sign" al evento click*/
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
   });
 
 });

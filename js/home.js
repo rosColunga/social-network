@@ -55,7 +55,7 @@ $(document).ready(function() {
       // Template de Modal, jalando la data y estilos css
       var structure = '<div class = "profPic pic-style inline-block" data-name="' + showing[j].wichGeneration + '" data-adress="' + showing[j].adress + '"data-major="' + showing[j].major + '"data-mail="' + showing[j].mail + '"' + ' id="' + showing[j].name + '">' +
         '<div class="relPosition" data-toggle="modal" data-target="#modal"> <img class="pic-style" src=" ' + showing[j].image + '"' + 'id="' + showing[j].name + '"' + '">' +
-        ' <div class="mouseOpacity visibility-hidden"><p class="text-center msOver-text" > ' + showing[j].name + '</p> </div></div></div>';
+        ' <div class="mouseOpacity visibility-hidden"><p class="text-center msOver-text" >' + showing[j].name + '</p> </div></div></div>';
       // Añadimos al final del div clase "photo-gallery", la estructura descrita arriba
       $('.photo-gallery').append(structure);
     });
@@ -106,7 +106,7 @@ $(document).ready(function() {
   var post = function(e) {
     e.preventDefault;
     //guardando los values de los inputs
-    var $postTitle = $('#post-title').val().toUpperCase();
+    var $postTitle = $('#post-title').val();
     var $postBody = $('#post-body').val();
 
     //creando los elementos
