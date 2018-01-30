@@ -31,16 +31,39 @@ Obtuvimos un total de 46 respuestas, y gráficamente podemos ver los siguientes 
 
 Realizando un análisis de los datos recabados, se pudo llegar a las siguientes conclusiones que guiaron las decisiones para la elaboración de esta red social:
 
+-
+-
+-
+-
+-
+
 Posteriormente se desglosaron las actividades principales a modo de pseudocódigo y checklists, y ayudadas por un tablero de Trello, pudimos corroborar nuestros avances.
 https://trello.com/b/45wLgRqk/producto-final
 
 
 ## Definición del diseño
-Una vez determinados los puntos que requieren las usuarias de nuestra nueva red social, se realizaron bocetos sobre la interacción y aspecto que en ina primera iteración, debía tener.
+Una vez determinados los puntos que requieren las usuarias de nuestra nueva red social, se realizaron bocetos sobre la interacción y aspecto que en una primera iteración en sus versiones **Desktop y Mobile**.
 
-Se determinó el nombre “Co-Lab” el cual ha sido del agrado de las alumnas. Se realiza una primera etapa de maquetación donde se ha organizado la información de la siguiente manera
+![Bocetos](assets/images/hand-sketches1.jpg)
+
+Se determinó el nombre **“< Co-Lab >”** el cual ha sido del agrado de las alumnas. Se realiza una primera etapa de maquetación.
+
+![Versión 1](assets/images/version1.JPG)
+
+Se corroboran mejoras técnicas y de ejecución para el desarrollo front-end; en pseudocódigo y hand-sketch para resolver adecuadamente.
+
+![Mejoras técnicas](assets/images/hand-sketches2.jpg)
+
+Con esta primera maqueta y habiendo interactuado de forma más profunda con la web-app, se genera una segunda versión. La Home page, ya cuenta con la función de *poder publicar* una pregunta, en primer lugar con un título y un contenido descriptivo. Igualmente con un *buscador* que filtra a los contactos por nombre.
+
+En la siguiente imágen se pueden observar algunas de las modificaciones.
+
+![Versión 2](assets/images/version2.JPG)
+
 
 ## Diseño mobile friendly
 En la versión móvil, encontramos una distribución jerárquica donde lo principal es el perfil de la persona, seguido de un espacio para realizar un propio post, el newsfeed donde se pueden consultar posts de personas en la red y al final un buscador de usuarias, con la posibilidad de ver sus datos e invitar a formar parte de tu red.
+
+![Versión 2](assets/images/mobile.jpg)
 
 •	Opcional, si se desarrolla un login o se desea almacenar la información en una base de datos, usar Firebase.
