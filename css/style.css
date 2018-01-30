@@ -281,7 +281,7 @@ img {
 .new-post-container {
   background-color: white;
   box-shadow: 6px 6px 8px #777;
-  margin: 0 auto;
+  margin: 10vh auto;
 }
 
 .post-body, .post-title {
@@ -299,6 +299,17 @@ img {
 .post-body {
   border:none;
   background-color:white;
+}
+
+/**** Home > Comentar ****/
+
+.comment-input {
+  border:none;
+  background-color:white;
+  color: gray;
+  width: 94%;
+  font-size: 1em;
+  box-shadow: 1px 1px 3px #777;
 }
 
 .padding-0 {
