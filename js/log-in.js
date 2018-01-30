@@ -13,6 +13,15 @@ $(document).ready(function() {
     window.location.href = '../index.html';
   });
 
+  /* Validación, habilitación de nextButton*/
+  $("#password").keypress(function() {
+    if ((this.value).length === 3) {
+      nextButton.removeClass('disabled');
+    } else if ((this.value).length !== 4) {
+      nextButton.addClass('disabled');
+    }
+  });
+
 });
 
 // Initialize Firebase
@@ -35,30 +44,33 @@ function authGoogle() {
   var provider = new firebase.auth.GoogleAuthProvider();
   authentication(provider);
 }
+var googleButton = $('#buttonGoogle');
 
 function authentication(provider) {
   firebase.auth().signInWithPopup(provider)
-  .then(function(result) {
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    var token = result.credential.accessToken;
-    // The signed-in user info.
-    var user = result.user;
-    console.log(result);
-    // ...
-  })
-  .catch(function(error) {
+    .then(function(result) {
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      var token = result.credential.accessToken;
+      // The signed-in user info.
+      var user = result.user;
+      // console.log(result);
+      window.location.href = "home.html";
 
-    // Handle Errors here.
-    var errorCode = error.code;
-    //console.log(errorCode);
-    var errorMessage = error.message;
-    //console.log(errorMessage);
-    // The email of the user's account used.
-    var email = error.email;
-    //console.log(email);
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-    //console.log(credential);
-    // ...
-  });
+    })
+    .catch(function(error) {
+
+      // Handle Errors here.
+      var errorCode = error.code;
+      //console.log(errorCode);
+      var errorMessage = error.message;
+      //console.log(errorMessage);
+      // The email of the user's account used.
+      var email = error.email;
+      //console.log(email);
+      // The firebase.auth.AuthCredential type that was used.
+      var credential = error.credential;
+      //console.log(credential);
+      // ...
+    });
+
 }

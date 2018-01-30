@@ -27,10 +27,10 @@
   <div class="container text-center">
 
     <nav class="row">
+      <div class="col-xs-1 text-center">
+        <a class="glyphicon glyphicon-triangle-left arrow-style go-back" type="button"></a>
+      </div>
       <div class="row centered col-xs-pull-4">
-        <div class="col-xs-1 text-center">
-          <a class="glyphicon glyphicon-menu-left arrow-style go-back" type="button"></a>
-        </div>
         <div class="text-center">
           <h1 class="text-center form-title">Inicia Sesión</h1>
         </div>
@@ -51,14 +51,16 @@
           </div>
           <div class="form-group">
             <div class="input-group form-inline">
-              <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
-              <input type="text" class="wow form-control" id="username" placeholder="tucorreo@gmail.com">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+              <!-- TYPE ocultará números ingresados -->
+              <input TYPE="password" type="number" type="text" class="form-control inputJs " id="password" placeholder="4 dígitos">
             </div>
           </div>
           <div class="checkbox">
             <label class="small-letter"><input type="checkbox" value="" checked>Estoy de acuerdo con los <a href="#"> terminos de privacidad</a> </label>
           </div>
         </form>
+
       </div>
 
     </div>
@@ -66,15 +68,14 @@
 
   <div class="row margin-0">
     <div class="col-xs-12  col-sm-6 col-sm-4 col-sm-offset-4">
-      <button class="btn btn-block text-uppercase enabled nextJs" type="button">Entrar</button>
-      <button id="buttonGoogle" class="btn btn-block text-uppercase" type="button">Inicia Sesión con Google</button>
+      <button class="btn btn-block text-uppercase disabled nextJs" type="button">Entrar</button>
+      <button id="buttonGoogle" class="btn btn-block enabled text-uppercase" type="button">Inicia Sesión con Google</button>
     </div>
   </div>
 
   </div>
 
-  <!-- Se vincula jQuery-CDN / Data / JS-->
-
+  <!-- Se vinculan Firebase / jQuery / JS -->
   <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
