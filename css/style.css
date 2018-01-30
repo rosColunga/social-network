@@ -376,6 +376,16 @@ div.modal-header, div.modal-body {
   visibility: hidden;
 }
 
+/**** Home > Comentar ****/
+.comment-input {
+  border:none;
+  background-color:white;
+  color: gray;
+  width: 94%;
+  font-size: 1em;
+  box-shadow: 1px 1px 3px #777;
+}
+
 /* Galería de fotos (amigas) en móvil*/
 
 @media (max-width:768px) {
