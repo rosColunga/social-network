@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--Tipo de archivo e dioma del sitio web-->
+<html lang="en">
+
+<head>
+  <!--Codificación de carácteres especiales-->
+  <meta charset="utf-8">
+  <!-- Define área usada por browser-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título web page-->
+  <title>
+    <Co-Lab>
+  </title>
+  <!-- Icono página-->
+  <link rel="shortcut icon" href="../assets/images/cl-logo1.png">
+  <!-- Tipografías-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Se vinculan estilos-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Barra de navegación-->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Menú hamburguesa para celulares-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Logo en proceso -->
+          <a class="logo white">
+            <img style="width:50%" src="../assets/images/cl-logo-blanco.png" alt="">
+          </a>
+        </div>
+
+        <!-- Funciones en barra de navegación-->
+        <div class="collapse navbar-collapse" id="collapse-1">
+
+          <ul class="nav navbar-nav navbar-right text-uppercase">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Amigos</a></li>
+            <li><a href="log-in.html">Log-out</a></li>
+          </ul>
+        </div>
+      </div>
+  </header>
+
+  <!-- Sección de Posts-->
+  <section class="col-sm-8 col-sm-push-1">
+    <h3><a class="" href="home.html"> <span style="color:gray" class="glyphicon glyphicon-backward"></span> Home</a></h3>
+    <h1 class="news-title"> FRIEND'S PROFILE </h1>
+
+    <section id="container">
+      <article>
+        <h2>Tips muy útiles para resolver Reto Trello</h2>
+        <img src="../assets/images/post-ale.JPG" />
+        <div class="row">
+          <p class="col-sm-10">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <div class="col-sm-2 col-md-2">
+            <input type="button" class="btn btn-primary" value="More..." />
+          </div>
+        </div>
+      </article>
+      <article class="new-post-container">
+
+        <input type="text" id="post-title" class="post-title" placeholder="Título de tu comentario...">
+        <hr class="divider">
+        <textarea name="" id="post-body" class="post-body" cols="1" rows="1" placeholder="Escribe tu opinión..."></textarea>
+        <button type="submit" class="btn btn-primary post-btn" id="post-btn">POST</button>
+      </article>
+    </section>
+  </section>
+  <!-- Contenidos en Home-->
+  <div class="container-fluid profile-title">
+    <div class=>
+
+      <!-- Info personal-->
+      <aside class="col-sm-2 col-sm-push-1 hidden-xs hidden-sm profile-aside">
+        <img class="profile-aside-pic" src="../assets/images/friend2.jpg" alt="">
+        <h4 class="profile-title gray">Grace Romo</h4>
+        <a href="https://www.linkedin.com/">
+          <i class="fa fa-linkedin-square fa-2x white lefted " aria-hidden="true"></i>
+        </a>
+        <div class="profile-info">
+          <h5 class="text-left bio">Manos a la obra y ¡Hablemos de desarrollo!</h5>
+        </div>
+        <!-- Sección de fotos de amigos y buscador -->
+        <aside class="friends-friends-section">
+          <h5 class="white page-header padd-marg-1 text-uppercase"> <span class="text-uppercase weight-700">Laboratorians </span>en tu red</h5>
+
+          <div class="container-fluid row">
+            <div class="form-group col-xs-12">
+              <div class="input-group">
+                <input type="text" class="form-control input-js" placeholder="Name">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-gallery">
+            <!-- Galería de imágenes -->
+          </div>
+
+          <!--MODAL DATA lABORATORIANS-->
+
+          <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="modal">
+            <div class="modal-dialog " role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h1 class="modal-name-title modal-title-style text-uppercase"></h1>
+                </div>
+                <div class="modal-body modal-flex modal-flex">
+                  <div class="container-data-modal modal-flex-container ">
+                    <div class="modal-item ">
+                      <h4 id="item-title" class=" text-center modal-title-style">GENERACIÓN <i class="glyphicon glyphicon-education"></i> </h4>
+                      <p class=" text-center item-text-style place-name-data"></p>
+                    </div>
+                    <div class="modal-item ">
+                      <h4 id="item-title" class=" text-center modal-title-style">SEDE <i class="glyphicon glyphicon-map-marker"></i> </h4>
+                      <p class=" text-center item-text-style adress-data"></p>
+                    </div>
+                    <div class="modal-item ">
+                      <h4 id="item-title" class=" text-center modal-title-style">CONTACTO <i class="glyphicon glyphicon-envelope"></i> </h4>
+                      <p class="text-center item-text-style mail-data"></p>
+                    </div>
+                    <div class="modal-item ">
+                      <h4 id="item-title" class=" text-center modal-title-style">ESPECIALIDAD <i class="glyphicon glyphicon-console"></i> </h4>
+                      <p class="text-center item-text-style major-data"></p>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-info justified inline-block">Ver perfil</button>
+                  <br>
+                  <div class="modal-footer" style="width:100%">
+                    <h4 id="addFriend" class="modal-title-style float-right light-weight">Añadir <i class="fa fa-user-plus float-right inline-block" aria-hidden="true"></i></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    </aside>
+
+  </div>
+
+
+  <footer class="container-fluid">
+    <img id="footer-logo" class="white text-center" src="../assets/images/cl-logo.png" alt="">
+  </footer>
+
+  <!-- Se vincula jQuery-CDN / Data / JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/home.js"></script>
+</body>
+
+</html>
