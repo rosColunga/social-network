@@ -3,7 +3,7 @@ var data = {
   /*Ciudades=key, por orden alfabético */
   'FRIEND2': [{
     name: 'Alejandra López',
-    image: '../assets/images/friend2.jpg',
+    image: '../assets/images/friend4.jpg',
     wichGeneration: '3° Generación <l>',
     adress: 'Arequipa',
     mail: "alelo@yahoo.com",
@@ -20,7 +20,7 @@ var data = {
   ],
   'FRIEND4': [{
       name: 'Graciela Romo',
-      image: '../assets/images/friend4.jpg',
+      image: '../assets/images/friend2.jpg',
       wichGeneration: '4° Generación | Teacher Jr.',
       adress: 'Santiago de Chile',
       mail: "grace-rm@hotmail.com",

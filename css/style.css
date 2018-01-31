@@ -130,6 +130,15 @@ img.profile-aside-pic {
 
 /* Sección amigos */
 
+.friends-friends-section{
+  padding-bottom: 4em;
+  border-radius: 100%;
+}
+.friends-friends-section img {
+  margin: 2em;
+  border-radius: 100%;
+}
+
 .friends-section {
   background-color: #333;
   padding-bottom: 3.5em;
