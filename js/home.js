@@ -222,3 +222,32 @@ $(document).ready(function() {
   }
 
 });
+
+
+/***Esta función sube foto de perfil***/
+$('#photo').hover(
+    function() {
+        $(this).find('a').fadeIn();//hace que el botón sea visible
+    }, function() {
+        $(this).find('a').fadeOut();//hace que la foto se devanezca
+    }
+)
+$('#file-select').on('click', function(e) {
+     e.preventDefault();
+
+    $('#file').click();
+})
+
+$('input[type=file]').change(function() {
+    var file = (this.files[0].name).toString();
+    var reader = new FileReader();
+
+    $('#file-info').text('');
+    $('#file-info').text(file);
+
+     reader.onload = function (e) {
+         $('#photo img').attr('src', e.target.result);//coloca el resultado en el contenedor
+	 }
+
+     reader.readAsDataURL(this.files[0]);
+});

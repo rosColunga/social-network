@@ -58,7 +58,16 @@
 
       <!-- Info personal-->
       <aside class="col-sm-3 profile-aside">
-        <img class="profile-aside-pic" src="../assets/images/friend1.jpg" alt="">
+        <!--aqui-->
+        <div id="photo" class="thumbnail">
+            <a href="#" id="file-select" class="btn btn-default">Cambia tu foto de perfil</a>
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4="/>
+        </div>
+        <span class="alert alert-info visibility-hidden" id="file-info">No hay archivo aún</span>
+        <form class="visibility-hidden" id="file-submit" enctype="multipart/form-data">
+            <input id="file" name="file" type="file"/>
+        </form>
+        <!-- IDEA:   <img class="profile-aside-pic" src="../assets/images/friend1.jpg" alt=""> -->
         <h4 class="profile-title gray">Nickname</h4>
         <a href="https://www.linkedin.com/">
           <i class="fa fa-linkedin-square fa-2x white lefted " aria-hidden="true"></i>
