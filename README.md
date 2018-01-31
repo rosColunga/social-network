@@ -79,4 +79,25 @@ En la versión móvil, encontramos una distribución jerárquica donde lo princi
 
 ![Versión 2](assets/images/mobile.jpg)
 
-•	Opcional, si se desarrolla un login o se desea almacenar la información en una base de datos, usar Firebase.
+
+## *Resultado*
+
+Dentro de la versión final, podemos observar la implementación de un logotipo que es una variante de el ya existente de < Laboratoria >. Utilizando la Tipografía *Museo Slab 300*, y los *3 colores principales* de su identidad gráfica. Aquí las variantes bocetadas y el icono:
+
+![Logo bocetaje](assets/images/logo-sketch.jpg)
+
+![](assets/images/cl-icon.png)
+
+## Firebase
+
+Al acceder al formulario de Inicio de sesión, tenemos la opción de aceder por medio de **ingresar nuestro nombre y contraseña**, dónde sólo se habilita el botón *Entrar* al haber llenado los dos campos. Y tenemos la segunda opción de **ingresar por medio de Google**, el cual al haber iniciado sesión con Google nos direcciona a la página de inicio; función que sucede gracias a la utilización de *Firebase*.
+
+![Logo bocetaje](assets/images/firebase-login.gif)
+
+## Flujo de Web-app *(Desktop)*
+
+![Logo bocetaje](assets/images/resultado-desktop.gif)
+
+## Responsive Web Desing *(Mobile)*
+
+![Logo bocetaje](assets/images/social-mobile.gif)
