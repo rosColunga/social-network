@@ -1,4 +1,8 @@
 # < Co-Lab >
+Propuesta de red social de la comunidad de alumnas y ex-alumnas de Laboratoria, con el objetivo de nutrir el proceso educativo al mismo tiempo que fortalecer la comunicación entre las integrantes de las diferentes sedes alrededor de Latinoamérica.
+
+![soc-med-mockup](https://user-images.githubusercontent.com/32855963/38632751-40d1f016-3d83-11e8-83f5-07051eb25f8e.jpg)
+
 ## Social Network
 
 **Introducción**
